@@ -7,18 +7,21 @@ fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1..=10);
 
-    let mut guess = String::new();
     //let apples = 5; immutable
     //let mut bananas = 5; mutable
 
     loop {
         println!("Please guess a number: ");
+        let mut guess = String::new();
         io::stdin()
             .read_line(&mut guess)
             .expect("Failed to read line");
 
         //shadowing to avoid mismatched types
-        let guess: u32 = guess.trim().parse().expect("Please type a number");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         println!("You guessed {}", guess);
         //let x = 5;
