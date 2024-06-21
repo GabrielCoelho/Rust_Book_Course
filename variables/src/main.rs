@@ -16,4 +16,12 @@ fn main() {
     }
 
     println!("The value of y outside the scope is {y}");
+
+    // allowed via shadowing
+    let spaces = "     "; 
+    let spaces = spaces.length(); 
+
+    // let mut spaces = "      "; 
+    // spaces = spaces.length(); <- this will panic because we're trying to mutate a variable's
+    // type. 
 }
