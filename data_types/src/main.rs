@@ -16,4 +16,8 @@ fn main() {
     let _unsigned1: usize = 1200000; // unsigned integer of arch bits
 
     // The arch size is based on the architecture of your CPU -> 64 or 32 bits.
+
+    // Floating-Point Types
+    let _float1: f32 = 2.0;
+    let _float2: f64 = 2.01;
 }
