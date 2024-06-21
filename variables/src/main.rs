@@ -4,5 +4,16 @@ fn main() {
     x = 6; //this will cause an error
     println!("The value of x is {x}");
 
-    const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3; 
+    //const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3; 
+
+    let y = 5; 
+
+    let y = y + 1; 
+
+    {
+        let y = y * 2; 
+        println!("The value of y in the scope is {y}");
+    }
+
+    println!("The value of y outside the scope is {y}");
 }
