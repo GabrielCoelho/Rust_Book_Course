@@ -20,4 +20,30 @@ fn main() {
     // Floating-Point Types
     let _float1: f32 = 2.0; // Single precision Floating-Point
     let _float2: f64 = 2.01; // Double precision Floating-Point
+
+    // Numeric Operations
+
+    let _sum = 5 + 10; // sum of two numbers or more numbers
+    let _diff = 95.5 - 4.3; // difference of two or more numbers
+    let _product = 4 * 30; // product of two or more numbers
+    let _quotient = 56.7 / 32.0; // gives the exact quotient of a division (must be Floating-Point
+                                 // type)
+    let _truncated = -5 / 3; // when dividing integers, the result will also be a integer (in this
+                             // case = -1)
+    let _mod = 43 % 2; // same as in C, the percentile sign is used to get the remainder of a
+                       // division.
+
+    // Boolean type
+    let _this_true = true; // non explicit type annotation
+    let _this_false: bool = false; // with explicit type annotation
+
+    // Char types
+    let c = 'z';
+    let z: char = 'ℤ'; // with explicit type annotation
+    let heart_eyed_cat = '😻'; // rust does support emojis
+                               // Rust's char type represents a Unicode Scalar Value -> Can represent more than just ASCII,
+                               // such as accented letters, emojis, Chinese, Japanese and Korean. Going from U+0000 to U+D7FF
+                               // and U+E000 to U+10FFFF
+
+    // Tuple Type
 }
