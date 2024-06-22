@@ -5,6 +5,10 @@ fn main() {
     fn_args(5);
     print_labeled_measurement(5, 'h');
     learning_rust_expressions();
+    println!(
+        "This line will have a number 5 at the end: {}",
+        return_five()
+    );
 }
 
 fn another_fn() {
@@ -40,4 +44,12 @@ fn learning_rust_expressions() {
     // expression is returning a value to the statement.
 
     println!("The value of y is {y}"); // will return 5
+}
+
+// Returning Values via function
+// // A function that return some value must be declared with a arrow (->) followed by the data
+// type this function will return
+fn return_five() -> i32 {
+    5 // If a line doesn't have a semicolon at the end, is because this expression is returning
+      // some value.
 }
