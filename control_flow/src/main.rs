@@ -100,4 +100,19 @@ fn learning_loops() {
     for element in _array {
         println!("For / the value is {element}");
     }
+
+    // For within a range
+    for number in (1..4).rev() {
+        // .rev() = reverse, its going backwards
+        println!("{number}!");
+    }
+    println!("LIFTOFF!");
+
+    // The Range goes from the first number until the last - 1 number. So, in the example above,
+    // the range is counting from 1 to 3, although is written 1..4. To count until the last number,
+    // we have to use an equal sign just before the last number, as the example below.
+
+    for othernumber in 1..=10 {
+        println!("{othernumber}");
+    }
 }
