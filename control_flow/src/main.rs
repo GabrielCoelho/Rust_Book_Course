@@ -95,4 +95,9 @@ fn learning_loops() {
         println!("The value is {}", _array[index]);
         index += 1;
     }
+
+    // Learning For
+    for element in _array {
+        println!("For / the value is {element}");
+    }
 }
