@@ -37,7 +37,23 @@ fn main() {
 fn learning_loops() {
     // This is an example of a endless loop, because it doesn't have any condition to exit this
     // repetition block.
-    loop {
-        println!("again!");
-    }
+    // loop {
+    //    println!("again!");
+    // }
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            // We learned before that to return something we don't put the semicolon at the end of
+            // the line which the returned value is. In case of the loop control flow, we may use
+            // the break expression to exit the loop. After the expression, in case we need to
+            // return something, we can put it there (as below). The semicolon is needed to end the
+            // loop statement by the break expression.
+            break counter * 2; // return 10 times 2
+        }
+    };
+
+    println!("The result is {result}");
 }
