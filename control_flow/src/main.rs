@@ -58,4 +58,25 @@ fn learning_loops() {
     };
 
     println!("The result is {result}");
+
+    // labeling loops
+    counter = 0;
+    // this loop is now called the "counting_up" loop
+    'counting_up: loop {
+        println!("counter = {counter}");
+        let mut remaining = 10;
+
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break; // this will break the loop without a name
+            }
+            if counter == 2 {
+                break 'counting_up; // this will break the loop named "counting_up"
+            }
+            remaining -= 1;
+        }
+        counter += 1;
+    }
+    println!("End counter = {counter}");
 }
