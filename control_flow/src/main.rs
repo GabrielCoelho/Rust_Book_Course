@@ -79,4 +79,12 @@ fn learning_loops() {
         counter += 1;
     }
     println!("End counter = {counter}");
+    counter += 1;
+
+    // Conditional Loops with while
+    while counter != 0 {
+        println!("{counter}");
+        counter -= 1;
+    }
+    println!("LIFTOFF!!");
 }
