@@ -87,4 +87,12 @@ fn learning_loops() {
         counter -= 1;
     }
     println!("LIFTOFF!!");
+
+    // Using While loops as a For loop
+    let _array = [10, 20, 30, 40, 50];
+    let mut index = 0;
+    while index < 5 {
+        println!("The value is {}", _array[index]);
+        index += 1;
+    }
 }
