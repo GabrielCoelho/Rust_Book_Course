@@ -1,3 +1,8 @@
+struct Rect {
+    width: u32,
+    height: u32,
+}
+
 fn main() {
     {
         // Similar to Tuple Data Type, but with a little twist. We can name the element, just like this
@@ -26,11 +31,17 @@ fn main() {
     }
 
     {
-        let rect1 = (30, 50);
-        println!("The area of the rectangle is {} square pixels", area(rect1));
+        let rect1 = Rect {
+            width: 30,
+            height: 50,
+        };
+        println!(
+            "The area of the rectangle is {} square pixels",
+            area(&rect1)
+        );
     }
 }
 
-fn area(dimensions: (u32, u32)) -> u32 {
-    dimensions.0 * dimensions.1
+fn area(rect: &Rect) -> u32 {
+    rect.width * rect.height
 }
