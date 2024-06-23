@@ -24,4 +24,18 @@ fn main() {
             user1.active, user1.username, user1.email, user1.sign_in_count
         );
     }
+
+    {
+        let width1 = 30;
+        let heigth1 = 50;
+
+        println!(
+            "The area of the rectangle is {} square pixels",
+            area(width1, heigth1)
+        );
+    }
+}
+
+fn area(w: u32, h: u32) -> u32 {
+    w * h
 }
