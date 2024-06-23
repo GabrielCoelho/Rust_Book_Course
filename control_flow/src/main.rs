@@ -53,6 +53,8 @@ fn learning_loops() {
             // loop statement by the break expression.
             break counter * 2; // return 10 times 2
         }
+        // Is possible to use `return` expression, but it will end the entire function. Break
+        // expression only returns from the loop
     };
 
     println!("The result is {result}");
