@@ -1,17 +1,15 @@
-enum Message {
-    Quit,                       // Doesn't have  any associated data at all
-    Move { x: i32, y: i32 },    // has named fields, like a struct
-    Write(String),              // tuple
-    ChangeColor(i32, i32, i32), // tuple
-}
-
-impl Message {
-    fn call(&self) {
-        // some code
-    }
-}
-
 fn main() {
-    let m = Message::Write(String::from("This is my message"));
-    m.call();
+    // Learning Option<T>
+    let _some_number: Option<i32> = Some(5);
+    let _some_char = Some('e');
+    let _absent_number: Option<i32> = None;
+
+    let _six = plus_one(_some_number);
+}
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        Some(i) => Some(i + 1),
+        _ => None,
+    }
 }
