@@ -5,6 +5,13 @@ enum Message {
     ChangeColor(i32, i32, i32), // tuple
 }
 
+impl Message {
+    fn call(&self) {
+        // some code
+    }
+}
+
 fn main() {
     let m = Message::Write(String::from("This is my message"));
+    m.call();
 }
