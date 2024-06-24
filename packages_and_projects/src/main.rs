@@ -1,3 +1,4 @@
+mod garden;
 fn main() {
-    println!("Hello, world!");
+    let _vegetable1 = crate::garden::vegetables::Asparagus::Type;
 }
