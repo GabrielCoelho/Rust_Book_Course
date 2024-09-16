@@ -32,7 +32,7 @@ fn _vector_collection() {
     }
 }
 
-pub fn loop_vecs() {
+fn _loop_vecs() {
     let v = vec![100, 32, 57];
     for i in &v {
         println!("{i}");
