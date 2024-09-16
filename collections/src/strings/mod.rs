@@ -18,8 +18,21 @@ pub fn learning_strings() {
     {
         let s1 = String::from("Hello, ");
         let s2 = String::from("world!");
-        let s3 = s1 + &s2; // s1 was moved, not usable anymore
+        // let s3 = s1 + &s2; // s1 was moved
+        let s5 = format!("{s1}{s2}!{s2}-- {s1}");
 
-        println!("{s3}");
+        println!("{s5}");
+        let mut s4 = String::from("lo");
+        s4.push_str("l");
+    }
+
+    {
+        let hello = "hello";
+        for c in hello.chars() {
+            println!("{c}");
+        }
+        for chars in hello.bytes() {
+            println!("{chars}");
+        }
     }
 }
