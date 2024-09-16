@@ -1,6 +1,7 @@
 mod vectors;
-use crate::vectors::vector_collection;
+use vectors::*;
 
 fn main() {
-    vector_collection();
+    //vector_collection();
+    loop_vecs();
 }

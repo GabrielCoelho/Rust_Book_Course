@@ -1,4 +1,4 @@
-pub fn vector_collection() {
+fn _vector_collection() {
     let _v: Vec<i32> = Vec::new();
     let v = vec![1, 2, 3];
     for val in v {
@@ -28,6 +28,22 @@ pub fn vector_collection() {
         match third {
             Some(third) => println!("Third element: {}", third),
             None => println!("There's no third element"),
+        }
+    }
+}
+
+pub fn loop_vecs() {
+    let v = vec![100, 32, 57];
+    for i in &v {
+        println!("{i}");
+    }
+
+    println!("\nAgora vou iterar estes valores: \n");
+    {
+        let mut v = vec![100, 32, 57];
+        for i in &mut v {
+            *i += 25;
+            println!("{}", i);
         }
     }
 }
